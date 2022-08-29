@@ -1,0 +1,43 @@
+/*
+ * Author: kAsA02
+ * Submission URL: https://atcoder.jp/contests/abc256/submissions/34445472
+ * Submitted at: 2022-08-29 13:31:58
+ * Problem URL: https://atcoder.jp/contests/abc256/tasks/abc256_d
+ * Result: WA
+ * Execution Time: 126 ms
+ */
+
+#include <bits/stdc++.h>
+using namespace std;
+#define rep(i, n) for (int i = 0; i < (int)(n); i++)
+#define rep1(i, s, n) for (int i = (s); i < (int)(n); i++)
+#define graph vector<vector<int>>
+#define all(vec) vec.begin(), vec.end()
+using ll = long long ;
+typedef pair<int, int> P;
+typedef tuple<string, ll, ll> T;
+
+int main() {
+    int n;
+    cin>>n;
+    vector<P> p(n);
+    rep(i,n){
+        int a,b;
+        cin>>a>>b;
+        p[i]=P(a,b);
+    }
+    sort(p.begin(),p.end());
+    vector<P> s;
+    s.push_back(p[0]);
+    for(int i=1;i<n;i++){
+        int size=s.size()-1;
+        if(s[size].second>=p[i].first) s[size].second=p[i].second;
+        else {
+            s.push_back(p[i]);
+        }
+    }
+    int size=s.size();
+    rep(i,size){
+        cout<<s[i].first<<" "<<s[i].second<<endl;
+    }
+}

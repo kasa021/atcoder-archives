@@ -1,0 +1,30 @@
+/*
+ * Author: kAsA02
+ * Submission URL: https://atcoder.jp/contests/abc197/submissions/36785787
+ * Submitted at: 2022-11-26 07:05:20
+ * Problem URL: https://atcoder.jp/contests/abc197/tasks/abc197_a
+ * Result: AC
+ * Execution Time: 8 ms
+ */
+
+#include <bits/stdc++.h>
+
+using namespace std;
+#define rep(i, n) for (int i = 0; i < (int)(n); i++)
+#define rep1(i, s, n) for (int i = (s); i < (int)(n); i++)
+#define graph vector<vector<int>>
+#define all(vec) vec.begin(), vec.end()
+using ll = long long ;
+typedef pair<int, int> P;
+typedef tuple<string, ll, ll> T;
+
+
+int main() {
+    string s,ans;
+    cin>>s;
+    ans=s[1];
+    ans+=s[2];
+    ans+=s[0];
+    cout<< ans << endl;
+}
+   

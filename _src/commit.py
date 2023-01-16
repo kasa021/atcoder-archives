@@ -9,7 +9,7 @@ def commitAll() -> None:
     repo.git.add(".")
     commit_msg = "Commit All"
     try:
-        repo.git.commit("-m", commit_msg, "-S")
+        repo.git.commit("-m", commit_msg)
     except git.GitCommandError as err:
         print("\033[2K\033[G", end="")
         print(f"\r\033[91mFail\033[0m Failed to commit: {commit_msg}", flush=True)

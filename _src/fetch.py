@@ -7,7 +7,7 @@ import get
 
 
 def submissions(epoch_sec: int) -> list[Submission]:
-    url = f"https://kenkoooo.com/atcoder/atcoder-api/v3/user/submissions?user=<Your AtCoder ID>&from_second={epoch_sec}"
+    url = f"https://kenkoooo.com/atcoder/atcoder-api/v3/user/submissions?user=kAsA02&from_second={epoch_sec}"
     res = requests.get(url).json()
     return [Submission(**s) for s in res]
 
@@ -16,7 +16,7 @@ def allSubmissions() -> list[Submission]:
     nowsec = 0
     res = []
     while True:
-        url = f"https://kenkoooo.com/atcoder/atcoder-api/v3/user/submissions?user=<Your AtCoder ID>&from_second={nowsec}"
+        url = f"https://kenkoooo.com/atcoder/atcoder-api/v3/user/submissions?user=kAsA02&from_second={nowsec}"
         now = requests.get(url).json()
         if len(now) == 0:
             break

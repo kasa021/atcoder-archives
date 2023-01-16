@@ -24,17 +24,10 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r _src/requirements.txt
-      - name: Import GPG
-        uses: crazy-max/ghaction-import-gpg@v5
-        with:
-          gpg_private_key: ${{secrets.GPG_PRIVATE_KEY}}
-          passphrase: ${{secrets.PASSPHRASE}}
-          git_user_signingkey: true
-          git_commit_gpgsign: true
       - name: Git Config
         run: |
-          git config --global user.name "<Your Name>"
-          git config --global user.email "<Your Email>"
+          git config --global user.name "kasa021"
+          git config --global user.email "109140298+kasa021@users.noreply.github.com"
       - name: Crawl and Commit
         run: python _src/main.py fetch_all
       - name: Push

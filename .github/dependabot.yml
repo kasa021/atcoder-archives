@@ -7,9 +7,9 @@ updates:
       time: "00:00"
     open-pull-requests-limit: 10
     reviewers:
-      - <Your GitHub ID>
+      - kasa021
     assignees:
-      - <Your GitHub ID>
+      - kasa021
     commit-message:
       prefix: fix
       prefix-development: chore
@@ -22,9 +22,9 @@ updates:
       time: "00:00"
     open-pull-requests-limit: 10
     reviewers:
-      - <Your GitHub ID>
+      - kasa021
     assignees:
-      - <Your GitHub ID>
+      - kasa021
     commit-message:
       prefix: fix
       prefix-development: chore

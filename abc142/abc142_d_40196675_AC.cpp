@@ -1,0 +1,10 @@
+/*
+ * Author: kAsA02
+ * Submission URL: https://atcoder.jp/contests/abc142/submissions/40196675
+ * Submitted at: 2023-04-01 03:45:02
+ * Problem URL: https://atcoder.jp/contests/abc142/tasks/abc142_d
+ * Result: AC
+ * Execution Time: 30 ms
+ */
+
+// code not found
